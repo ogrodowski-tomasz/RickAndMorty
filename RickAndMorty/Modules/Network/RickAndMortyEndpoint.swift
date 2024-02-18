@@ -35,8 +35,6 @@ extension RickAndMortyEndpoint {
         components.host = host
         components.path = path
         components.queryItems = queryItems
-        let url = components.url
-        print("DEBUG: url: \(url)")
-        return url
+        return components.url
     }
 }

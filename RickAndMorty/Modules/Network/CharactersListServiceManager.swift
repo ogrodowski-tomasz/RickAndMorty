@@ -38,6 +38,7 @@ final class CharactersListServiceManager: Network.CharacterList {
 
 final class CharactersListServiceManagerStub: Network.CharacterList {
     func getCharactersList(page: Int) async throws -> [SingleCharacter] {
+        try await Task.sleep(nanoseconds: 5_000_000_000)
         let results = try StaticJsonMapper.fetch(filename: "CharacterListStaticData", decodeToType: CharacterListResponseModel.self)
         return results.results
     }
