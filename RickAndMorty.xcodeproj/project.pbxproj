@@ -19,6 +19,9 @@
 		1E76A8852B821F460026BA37 /* RickAndMortyEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76A8842B821F460026BA37 /* RickAndMortyEndpoint.swift */; };
 		1E76A8872B8222250026BA37 /* CharactersListStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76A8862B8222250026BA37 /* CharactersListStorageManager.swift */; };
 		1E76A8892B82223E0026BA37 /* PersistenceModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76A8882B82223E0026BA37 /* PersistenceModule.swift */; };
+		1E76A88C2B82271A0026BA37 /* StaticJSONMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76A88B2B82271A0026BA37 /* StaticJSONMapper.swift */; };
+		1E76A88F2B8227430026BA37 /* CharacterListStaticData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E76A88E2B8227430026BA37 /* CharacterListStaticData.json */; };
+		1E76A8922B8227DF0026BA37 /* PreviewProvider+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76A8912B8227DF0026BA37 /* PreviewProvider+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		1E76A8842B821F460026BA37 /* RickAndMortyEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyEndpoint.swift; sourceTree = "<group>"; };
 		1E76A8862B8222250026BA37 /* CharactersListStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListStorageManager.swift; sourceTree = "<group>"; };
 		1E76A8882B82223E0026BA37 /* PersistenceModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceModule.swift; sourceTree = "<group>"; };
+		1E76A88B2B82271A0026BA37 /* StaticJSONMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticJSONMapper.swift; sourceTree = "<group>"; };
+		1E76A88E2B8227430026BA37 /* CharacterListStaticData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CharacterListStaticData.json; sourceTree = "<group>"; };
+		1E76A8912B8227DF0026BA37 /* PreviewProvider+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewProvider+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,7 @@
 		1E76A86E2B821CD80026BA37 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				1E76A88A2B8226B00026BA37 /* Helpers */,
 				1E76A8802B821EEA0026BA37 /* ModulesDefinition */,
 				1E76A8712B821CE20026BA37 /* Network */,
 				1E76A8702B821CDD0026BA37 /* Persistence */,
@@ -179,6 +186,32 @@
 			path = ModulesDefinition;
 			sourceTree = "<group>";
 		};
+		1E76A88A2B8226B00026BA37 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1E76A8902B8227D10026BA37 /* Extensions */,
+				1E76A88D2B8227310026BA37 /* StaticData */,
+				1E76A88B2B82271A0026BA37 /* StaticJSONMapper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1E76A88D2B8227310026BA37 /* StaticData */ = {
+			isa = PBXGroup;
+			children = (
+				1E76A88E2B8227430026BA37 /* CharacterListStaticData.json */,
+			);
+			path = StaticData;
+			sourceTree = "<group>";
+		};
+		1E76A8902B8227D10026BA37 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1E76A8912B8227DF0026BA37 /* PreviewProvider+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -238,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E76A8682B821C710026BA37 /* Preview Assets.xcassets in Resources */,
+				1E76A88F2B8227430026BA37 /* CharacterListStaticData.json in Resources */,
 				1E76A8652B821C710026BA37 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,8 +285,10 @@
 			files = (
 				1E76A87B2B821D600026BA37 /* CharactersListViewModel.swift in Sources */,
 				1E76A8632B821C710026BA37 /* ContentView.swift in Sources */,
+				1E76A8922B8227DF0026BA37 /* PreviewProvider+Extensions.swift in Sources */,
 				1E76A8872B8222250026BA37 /* CharactersListStorageManager.swift in Sources */,
 				1E76A8612B821C710026BA37 /* RickAndMortyApp.swift in Sources */,
+				1E76A88C2B82271A0026BA37 /* StaticJSONMapper.swift in Sources */,
 				1E76A87F2B821E960026BA37 /* CharactersListServiceManager.swift in Sources */,
 				1E76A8852B821F460026BA37 /* RickAndMortyEndpoint.swift in Sources */,
 				1E76A8792B821D490026BA37 /* CharactersListView.swift in Sources */,

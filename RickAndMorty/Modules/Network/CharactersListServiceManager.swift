@@ -35,3 +35,10 @@ final class CharactersListServiceManager: Network.CharacterList {
 
 
 }
+
+final class CharactersListServiceManagerStub: Network.CharacterList {
+    func getCharactersList(page: Int) async throws -> [SingleCharacter] {
+        let results = try StaticJsonMapper.fetch(filename: "CharacterListStaticData", decodeToType: CharacterListResponseModel.self)
+        return results.results
+    }
+}

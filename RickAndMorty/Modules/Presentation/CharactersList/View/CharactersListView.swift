@@ -10,16 +10,8 @@ struct CharactersListView: View {
 }
 
 struct CharactersListView_Previews: PreviewProvider {
-    
-    static func viewModel() -> CharactersListViewModel {
-        let network = CharactersListServiceManager()
-        let storage = CharactersListStorageManager(networkManager: network)
-        let viewModel = CharactersListViewModel(storageManager: storage)
-        return viewModel
-    }
-
     static var previews: some View {
-        CharactersListView(viewModel: viewModel())
+        CharactersListView(viewModel: characterListViewModel())
     }
 }
 
